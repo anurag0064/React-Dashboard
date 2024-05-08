@@ -5,16 +5,16 @@ import { FaPlus, FaRegSmile } from "react-icons/fa";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import memoji2 from "../../../../../../assets/images/memoji2.jpg";
 import { ImAttachment } from "react-icons/im";
-import CommentAction from './components/commentAction';
+import CommentAction from './Tabcomponents/commentAction';
 
 
 const tabsData = [
-    { label: "Subtasks"},
-    { label: "Attachment"},
-    { label: "Comments"}
+    { label: "Subtasks" },
+    { label: "Attachment" },
+    { label: "Comments" }
 ];
 
-const DefaultTab = () => {
+const Tabs = () => {
     const [activeTab, setActiveTab] = useState();
     const [dropdown, setDropdown] = useState();
 
@@ -49,20 +49,20 @@ const DefaultTab = () => {
                         {tab.label === "Subtasks" && (
                             <div className='w-full flex flex-col gap-2'>
                                 <div className='flex justify-between items-center px-6'>
-                                <div className='flex items-center gap-2'>
-                                    <button onClick={handleDropdown} className="dropbtn">
-                                        <IoMdArrowDropup className={`text-[#707999] ${dropdown ? 'rotate-180' : ''}`} />
-                                    </button>
-                                    <h1 className='text-[#2a2a33] font-semibold text-sm'>Subtasks</h1>
-                                    <h1 className='text-[#707999] text-sm'>12/25</h1>
+                                    <div className='flex items-center gap-2'>
+                                        <button onClick={handleDropdown} className="dropbtn">
+                                            <IoMdArrowDropup className={`text-[#707999] ${dropdown ? 'rotate-180' : ''}`} />
+                                        </button>
+                                        <h1 className='text-[#2a2a33] font-semibold text-sm'>Subtasks</h1>
+                                        <h1 className='text-[#707999] text-sm'>12/25</h1>
+                                    </div>
+                                    <div>
+                                        <button className="flex items-center gap-2 text-xs bg-white hover:bg-white text-black border border-slate-200 px-2 py-1 rounded justify-end font-semibold">
+                                            <FaPlus />
+                                            Add Subtasks
+                                        </button>
+                                    </div>
                                 </div>
-                                <div>
-                                    <button className="flex items-center gap-2 text-xs bg-white hover:bg-white text-black border border-slate-200 px-2 py-1 rounded justify-end font-semibold">
-                                        <FaPlus />
-                                        Add Subtasks
-                                    </button>
-                                </div>
-                                  </div>
                                 {dropdown && (
                                     <div id="myDropdown" className="dropdown-content">
                                         <TodoItems />
@@ -74,7 +74,7 @@ const DefaultTab = () => {
                             <div className={`px-6 rounded-lg ${activeTab === index ? '' : 'hidden'}`} role="tabpanel">
                                 <div className="flex border border-slate-200 justify-between p-3 rounded-xl">
                                     <div className='flex gap-2 items-center'>
-                                        <ImAttachment className='text-sm hover:text-slate-400'/>
+                                        <ImAttachment className='text-sm hover:text-slate-400' />
                                         <h1 className='font-semibold text-sm'>Attachment</h1>
                                     </div>
                                     <div className='flex items-center gap-2'>
@@ -112,7 +112,7 @@ const DefaultTab = () => {
                                                 <h2 className='text-slate-500 text-sm'>Good</h2>
                                             </div>
                                             <div className='flex'>
-                                              <CommentAction/>
+                                                <CommentAction />
                                             </div>
                                         </div>
                                     </div>
@@ -126,4 +126,4 @@ const DefaultTab = () => {
     );
 };
 
-export default DefaultTab;
+export default Tabs;

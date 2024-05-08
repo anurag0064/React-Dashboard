@@ -3,11 +3,10 @@ import { GiSandsOfTime } from "react-icons/gi";
 import { TbProgress } from "react-icons/tb";
 import { TfiTimer } from "react-icons/tfi";
 import { FaArrowRightLong } from "react-icons/fa6";
-import ToggleSwitch from '../../../../../common/toggle/Toggleswitch';
-
+import ToggleSwitch from '../../../../../common/toggle/toggleSwitch';
 import { Checkbox } from '@material-tailwind/react';
 import memoji from "../../../../../../assets/images/memoji.jpg";
-import Defaultrange from '../../../../../common/range/defaultrange';
+import RangeSlider from '../../../../../common/rangeslider/rangeSlider';
 
 const data = [
   {
@@ -61,7 +60,7 @@ const ProjectStatus = () => {
               </div>
               <h1 className='flex text-sm text-[#8387a1] font-semibold'>60%</h1>
             </div>
-            <Defaultrange />
+            <RangeSlider />
           </div>
         </div>
       </div>
@@ -105,12 +104,12 @@ const ProjectStatus = () => {
                 <div className='flex flex-col'>
                   <div className='flex h-10'>
                     <div className='w-[46px] flex justify-center'>
-                      <div className='w-[1px] bg-[#d5d8ec]'/>
+                      <div className='w-[1px] bg-[#d5d8ec]' />
                     </div>
                     <div className='flex items-center gap-2'>
                       <h1 className='text-sm text-[#f014b6] w-14 rounded-full px-3 bg-[#fed7f2] font-bold py-1'>ToDo</h1>
                       <FaArrowRightLong className='text-[#8387a1]' />
-                      <h1 className='text-sm text-[#dab229] w-28 rounded-full px-3 bg-[#effbe5] font-bold py-1'>In Progress</h1>
+                      <h1 className='text-sm text-[#eab308] w-28 rounded-full px-3 bg-[#fef9c3] font-bold py-1'>In Progress</h1>
                     </div>
                   </div>
                 </div>

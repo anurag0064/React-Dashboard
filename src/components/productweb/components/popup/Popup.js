@@ -8,7 +8,7 @@ import { RiShareForwardLine } from "react-icons/ri";
 import { IoMdClose } from "react-icons/io";
 import { LuEye } from "react-icons/lu";
 import { BsThreeDots } from "react-icons/bs";
-import ProjectStatus from './components/projectstatus/ProjectStatus';
+import ProjectStatus from './components/projectStatus/projectStatus';
 import Designdetail from './components/designdetail/taskDetails';
 
 export default function Popup({ isOpen, onClose = () => null }) {

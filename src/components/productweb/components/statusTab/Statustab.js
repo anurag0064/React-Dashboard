@@ -1,6 +1,6 @@
 import { IoIosArrowDown } from "react-icons/io";
 
-const Tab = () => {
+const Statustab = () => {
   return (
 <div className="w-3/4">
   <div>
@@ -26,4 +26,4 @@ const Tab = () => {
 
   )
 }
-export default Tab;
+export default Statustab;

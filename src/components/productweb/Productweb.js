@@ -7,9 +7,9 @@ import photo1 from "../../assets/images/photo1.png";
 import photo2 from "../../assets/images/photo2.png";
 import photo3 from "../../assets/images/photo3.png";
 import { HiMenuAlt4 } from "react-icons/hi";
-import Tab from "./components/tab/tab";
 import Card from "./components/card/Card";
 import Ellipsis from "./components/ellipsis/ellipsis";
+import Statustab from "./components/statusTab/Statustab";
 
 const menuItems = [
     { text: "Projects", icon: <IoIosArrowForward />, link: "#" },
@@ -42,7 +42,7 @@ const Productweb = () => {
             <div className="flex gap-2 px-4 h-20 items-center">
                 <div className="flex w-2/3  justify-center items-center gap-3">
                     <Input />
-                    <Tab />
+                    <Statustab />
                 </div>
                 <div className="flex w-1/2 justify-end items-center gap-3">
                     <div className="flex">

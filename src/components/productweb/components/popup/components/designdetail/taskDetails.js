@@ -2,7 +2,7 @@ import React from 'react';
 import memoji from "../../../../../../assets/images/memoji.jpg";
 import memoji1 from "../../../../../../assets/images/memoji1.jpg";
 import memoji2 from "../../../../../../assets/images/memoji2.jpg";
-import Defaulttab from '../defaulttab/Defaulttab';
+import Defaulttab from '../tabs/Tabs';
 
 const Designdetail = () => {
 
@@ -24,7 +24,7 @@ const Designdetail = () => {
             <h1 className="text-sm text-[#707999]">Status</h1>
           </div>
           <div className=''>
-            <h1 className="text-sm text-[#dab229] w-28 rounded-full px-3 bg-[#effbe5] font-bold py-1">In Progress</h1>
+            <h1 className="text-sm text-[#eab308] w-28 rounded-full px-3 bg-[#fef9c3] font-bold py-1">In Progress</h1>
           </div>
         </div>
         <div className='flex items-center'>
@@ -63,7 +63,7 @@ const Designdetail = () => {
           <div>
             <div className='flex rounded-lg bg-[#f2fbe7]  w-10 items-center'>
               <h1 className="h-1 w-1 bg-[#45d404] rounded-full absolute ms-2"></h1>
-              <h1 className='text-sm text-[#59d434] rounded-lg bg-[#f2fbe7] px-4 font-bold'>Low</h1>
+              <h1 className='text-sm text-[#59d434] rounded-lg bg-[#dcfce7] px-4 font-bold'>Low</h1>
             </div>
           </div>
         </div>
